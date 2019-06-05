@@ -1,0 +1,204 @@
+.footer-open-table {
+    width: 100%;
+    height: auto;
+    background: #333333;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-menu-open-table {
+    margin-top: 10px;
+    background: #333333;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.menu-open-table {
+    height: auto;
+    flex: 1;
+    padding-right: 25px;
+}
+
+.tiltle-menu-open-table,
+.redes-sociales {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 12px;
+}
+
+
+
+.btn-restauranteros {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background: #666666;
+    border-radius: 3px;
+}
+.list-container{
+    padding: 0;
+}
+
+.list-container li {
+    line-height: 22px;
+    list-style: none;
+}
+
+.list-menu-open-table {
+    font-size: 13px;
+    color: #ACACAC;
+    font-family: sans-serif;
+    font-weight: bold;
+  
+}
+
+.list-menu-open-table:hover {
+    color: white;
+}
+
+.btn-menu-open-table {
+    display: inline-block;
+    align-items: center;
+    font-size: 12px;
+    padding: 12px 0;
+    font-family: sans-serif;
+    margin-right: 2px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.btn-restauranteros:hover {
+    background: #999999;
+}
+
+.chevron::before {
+    content: '';
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-style: solid;
+    color: white;
+    transform: rotate(45deg);
+    border-width: 0.10em 0.10em 0 0;
+    position: relative;
+}
+
+.redes-sociales-icon {
+    height: 50px;
+}
+
+.redes-sociales-icon >.fab {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background: #ACACAC;
+    color: #333333;
+    text-align: center;
+    margin: 2px;
+}
+
+.redes-sociales-icon >.fab:hover {
+    background: white;
+}
+
+.cookies {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px auto 10px auto;
+    list-style: none;
+    padding: 0;
+}
+
+.cookies >.cookies-preferencias {
+    margin: 0 10px;
+    color: white;
+    opacity: 0.9;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.cookies >.cookies-preferencias:first-child {
+    margin-left: 0;
+}
+
+.cookies >.cookies-preferencias:hover {
+    color: #ACACAC;
+}
+
+.footer-info {
+    color: #ACACAC;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666666;
+}
+
+.footer-info-botton {
+    color: #ACACAC;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.patrocinadores {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.patrocinadores img {
+    margin-right: 20px;
+}
+
+.booking {
+    display: inline-block;
+    width: 91px;
+    height: 15px;
+}
+
+.priceline {
+    width: 90px;
+    height: 30px;
+}
+
+.kayak {
+    width: 115px;
+    height: 35px;
+}
+
+.agoda {
+    width: 70px;
+    height: 27px;
+}
+
+.rentacars {
+    width: 150px;
+    height: 45px;
+}
+
+.opentable {
+    width: 120px;
+    height: 50px;
+}

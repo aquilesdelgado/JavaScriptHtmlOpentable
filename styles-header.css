@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+* {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    box-sizing:border-box;
+}
+
+header {
+    margin-top: 0px;
+    height: 90px;
+}
+/* BARRA NAVEGACIÖN MENÚ SUPERIOR */
+
+header nav#nav_top {
+    width: 100%;
+    height: 30px;
+    background-color: #f7f7f7;
+}
+
+
+/* SECCION LOGO Y BOTONES DE CUENTA */
+
+a {
+    text-decoration: none;
+  }
+  
+  nav#nav_top {
+      z-index: 100;
+  }
+  
+  nav#nav_top ul {
+    float: right;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      margin-right: 25px;
+  }
+  
+  nav#nav_top li {
+      color: #666;
+      display: block;
+      float: left;
+      padding: 6px 10px;
+      position: relative;
+      text-decoration: none;
+  }
+    
+  nav#nav_top li a {
+    color: #888;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  nav#nav_top li a:hover {
+      cursor: pointer;
+      color: #444;
+  }
+  nav#nav_top li a#pais {
+      margin-left: 15px;
+  }
+
+  nav#nav_top ul li ul {
+      background: #fff;
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+      position: absolute;
+    margin-top: 5px;
+      left: 0;
+    display: none;
+  }
+  
+  nav#nav_top ul li:hover > ul,
+  nav#nav_top ul li:focus-within > ul, 
+  nav#nav_top ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    border: 1px solid #ddd;
+  }
+  
+  nav#nav_top ul li ul li {
+      clear: both;
+      margin-left: -50px;
+      height: 30px;
+    width: 150px;
+    z-index: 100;
+    background-color: #fff;
+  }
+
+  nav#nav_top ul li ul li:hover {
+      background-color: #f7f7f7;
+      z-index: 100;
+  }
+
+  nav#nav_top ul li ul.selector_pais li:hover {
+    background-color: #eef4fb;
+    z-index: 100;
+}
+
+  
+/**********************************************************************/
+
+section#top_bar {
+    width: 100%;
+    height: 60px;
+    display: inline;
+    z-index: 2;
+}
+
+section#top_bar #logo {
+    display: inline;
+    width: 45%;
+    height: 55px;
+    float: left;
+    position: relative;
+    padding-left: 20px;
+}
+
+section#top_bar #logo a {
+    background: url("public/img/logo.png") 0 8px no-repeat;
+    display: block;
+    width: 156px;
+    height: 100%;
+}
+
+/* Botones Cuentas */
+#botones_cuentas {
+    display: inline;
+    width: 45%;
+    height: 55px;
+    float: right;
+    position: relative;
+    padding-right: 20px;
+}
+
+nav#botones_top ul { 
+    display: inline;
+    float: right;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 5px;
+}
+nav#botones_top ul li {
+    padding: 4px 15px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+nav#botones_top ul li a {
+    color: #444;
+    text-decoration: none;
+}
+
+nav#botones_top ul li a.boton_top {
+    width: 140px;
+    height: 35px;
+    padding: 8px 20px;
+    background-color: #237b98;
+    color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 13px;
+}
+nav#botones_top ul li a.boton_top:hover {
+    color: #f7f7f7;
+    background-color: #1c627a;
+}
+
+nav#botones_top ul li a:hover {
+	color: #222;
+	text-decoration: none;
+}
+/* MAIN y PORTADA */
+
+main {
+    width: 100%;
+}
+
+#contenedor_portada {
+    width: 100%;
+    height: 416px;
+    position: static;
+    opacity: 1;
+
+}
+.portada_img1 {
+    background: url('public/img/slider-1.jpg') !important;
+    background-position: 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.portada_img2 {
+    background: url('public/img/slider-2.jpg') !important;
+    background-position: 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.portada_img3 {
+    background: url('public/img/slider-3.jpg') !important;
+    background-position: 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#portada {
+    background: rgba(47,45,65,.7);
+    width: 100%;
+    height: 416px;
+    z-index: 2;
+    position: relative;
+}
+
+#contenido_portada {
+    margin: 0 auto;
+    padding-top: 120px;
+    width: 980px;
+}
+
+#contenido_portada h1 {
+    color: #ffffff;
+    font-size: 43px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 25px 0;
+}
+
+/* Formulario */
+form {
+    display: inline;
+    padding-top: 25px;
+    z-index: 1;
+}
+#contenedor_buscador {
+    display: inline;
+    width: 290px;
+    height: 55px;
+    margin: 0 15px;
+}
+#contenedor_selectores {
+    display: inline;
+    width: 490px;
+    height: 55px;
+    box-sizing: border-box;
+    background: #fff;
+}
+#home_selector_hora, #home_selector_fecha, #home_selector_personas  {
+    width: 160px;
+    height: 55px;
+    display: inline-block;
+    background: #fff;
+    z-index: 1000;
+}
+#home_selector_hora {
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    margin-right: -4px;
+}
+
+#home_selector_personas {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-right: -4px;
+}
+
+#home_selector_fecha {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+select {
+    height: 50px;
+    width: 160px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 0;
+    
+}
+option {
+    height: 50px;
+    width: 160px;
+    font-size: 16px;
+    padding: 5px;
+    display: inline;
+    border-radius: 0;
+}
+input#fecha_reserva  {
+    width: 160px;
+    height: 54px;
+    /*border-right: 1px solid #ddd;*/
+    opacity: 1;
+    margin: 0;
+    border: none;
+    order: 1;
+    z-index: 200;
+    line-height: 30px;
+    padding-left: 10px;
+}
+select {
+    width: 160px;
+    height: 50px;
+    padding: 5px;
+    background: #ffffff;
+    opacity: 1;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+select#date {
+    all:unset;
+    border: 0;
+    font-family: "Montserrat", sans-serif;
+}
+input#buscador {
+    width: 290px;
+    height: 52px;
+    border-radius: 6px;
+    border: none;
+}
+input[type=submit] {
+    width: 140px;
+    height: 52px;
+    padding: 8px 20px;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+}

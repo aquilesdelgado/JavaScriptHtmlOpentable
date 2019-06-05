@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="public/img/favicon.png">
+    <link rel="stylesheet" href="stylesaquiles.css">
+    <link rel="stylesheet" href="styles-header.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Open+Sans" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Open Table</title>
+<meta name="description" content="ejercicio1"/>
+</head>
+
+<body>
+
+    <header>
+        <nav id="nav_top">
+            <ul>
+                <li><a href="">Para propietarios de restaurantes</a></li>
+                <li><a href="">Teléfono móvil</a>
+                    
+                    <ul class="dropdown">
+                        <li><a href="">App para Ios</a></li>
+                        <li><a href="">App para Android</a></li>
+                    </ul>
+                   
+                </li>
+                <li><a href="" id="pais">ES</a>
+                    <ul class="dropdown selector_pais">
+                        <li><a href="">Deustch</a></li>
+                        <li><a href="">English</a></li>
+                        <li><a href="">Español</a></li>
+                        <li><a href="">Français</a></li>
+                        <li><a href="">Italiano</a></li>
+
+                    </ul>
+                
+                </li>
+
+
+            </ul> 
+        </nav>
+
+        <section id="top_bar">
+            <div id="logo">
+                <a href="#"></a>
+
+            </div>
+
+            <div id="botones_cuentas">
+                <nav id="botones_top">
+                    <ul>
+                        <li><a href="" class="boton_top">Crear Cuenta</a></li>
+                        <li><a href="" class="no_boton">Iniciar sesión</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <section id="contenedor_portada" class="portada_img1">
+            <div id="portada">
+
+                <div id="contenido_portada">
+                <h1>Encuentra la mesa adecuada para cada ocasión</h1>
+                <div id="seccion_form">
+                    <form action="encuentra_mesa.php" id="encuentra_mesa" method="POST"> 
+                        <div id="contenedor_selectores">
+                           
+                            <div id="home_selector_fecha">
+                            <input type="date" id="fecha_reserva" name="fecha_reserva" required placeholder="dd/mm/aaaa">
+                            
+                            </div>
+
+                            <div id="home_selector_hora">
+                            <select id="hora" name="hora" placeholder="18:00">
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                            </select>
+                            </div>
+
+                            <div id="home_selector_personas">
+                            <select id="num_personas" name="num_personas" placeholder="2">
+                                    <option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                            </select>
+                            </div>
+                        </div>
+                        
+                        <div id="contenedor_buscador">
+                            <input type="text" id="buscador" name="buscador" list="buscador_data">
+                             <datalist id="buscador_data">
+                            <option value="mad" label="Madrid"></option>
+                            <option value="barc" label="Barcelona"></option>
+                            <option value="roma" label="Roma"></option>
+                            <option value="milan" label="Milán"></option>
+                            </datalist>
+                        </div>
+
+                            <input type="submit" id="submit" value="Buscar mesa">
+                    </form>
+
+                </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="sliders">
+                <div class="margen__sliders">
+                        <div class="titulo1">
+                            <h1 class="titulo1__contenido">Parece que está en Retiro. ¿No es correcto?</h1>
+                            <a href="" class="titulo1__enlace"><img class="titulo1__enlace__imagen" src="public/img/geolocalizacion.png" height="17" width="20"/>Obtener ubicación actual</a></div>
+                        <div class="titulo">
+                            <h1 class="titulo__contenido">Restaurantes populares en Retiro</h1>
+                            <a href="" class="titulo__enlace">Ver todos</a></div>
+                    <div class="slider1">
+                        <div class="contenedor">
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/24993071.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Tatel Madrid</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">Spanish. €€€ . Castelllana</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 5 times today</span>
+                                </a></div>
+                            </div>
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/25829373.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Perrachica</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">Spanish. €€. Arapiles</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 6 times today</span>
+                                </a></div>
+                            </div>
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/25830349.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Habanera</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">Cuban. €€. Recoleto</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 5 times today</span>
+                                </a></div>
+                            </div>
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/25990632.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Poncelet Cheese Bar</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">International. €€. Castellana</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 3 times today</span>
+                                </a></div>
+                            </div>
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/25266923.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Golfo de Bizkaia Madrid</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">Basque. €€. Goya</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 4 times today</span>
+                                </a></div>
+                            </div>
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/25773511.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Brasserie Antoinette</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">Contemporary French. €€. Sol</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 2 times today</span>
+                                </a></div>
+                            </div>
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/25271329.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Sagardi Castellana</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">Basque. €€E. Goya</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 9 times today</span>
+                                </a></div>
+                            </div>
+                            <div class="contenedor__items">
+                                <div class="contenedor__imagen" style="background-image:url(https://resizer.otstatic.com/v2/photos/medium/25865829.jpg)">
+                                </div>
+                                <div class="contenedor___datos"><a href="#" class="contenedor___datos__enlace">
+                                    <h1 class="contenedor__titulo">Hard Rock Cafe Madrid</h1>
+                                    <span class="contenedor__rating">
+                                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio1"> &#9733;</label><!--
+                                 --><input id="radio2" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio2"> &#9733;</label><!--
+                                 --><input id="radio3" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio3"> &#9733;</label><!--
+                                 --><input id="radio4" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio4"> &#9733;</label><!--
+                                 --><input id="radio5" type="radio" name="estrellas" value="5"><!--
+                                 --><label class="contenedor__estrella" for="radio5"> &#9733;</label></span>
+                                    <h2 class="contenedor__subtitulo">American. €€€. Recoletos</h2>
+                                    <span class="contenedor__contenido"><img src="public/img/icono.png" height="17" width="20"/> booked 8 times today</span>
+                                </a></div>
+                            </div>
+                        </div>
+                        <a class="prev1" id="-1" value="-1">&#10094;</a>
+                        <a class="next1" id="1" value="1" >&#10095;</a>
+                    </div>
+                    <div class="titulo">
+                            <h1 class="titulo__contenido">Mejores cocinas cerca de ti</h1>
+                        </div>
+                    <div class="slider2">
+                        <div id="contenedor_1" class="contenedor1">
+                            <div id="contenedor_items_1" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/1E4602A7-FE7D-431A-A304-5A3AF9A89223.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">Mejores restaurantes de comida Española a tu alreredor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                            <div id="contenedor_items_2" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/71C5B1FC-DC2A-4DFF-BF31-F4E7B8E956A0.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">Mejores restaurantes de comida Mediterranea a tu alrededor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                            <div id="contenedor_items_3" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/05486DDD-BADF-42A7-BCE2-D3DA1FE4146D.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">Mejores restaurantes de comida Vasca a tu alrededor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                            <div id="contenedor_items_4" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/029CD931-4A83-4572-B87A-2B0CE7ABCB1E.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">Mejores restaurantes de comida Mexicana a tu alrededor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                            <div id="contenedor_items_5" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/2A47AECA-4C19-449D-A956-D02AA35740E3.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">Mejores restaurantes de comida Fusión / Ecléptica a tu alrededor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                            <div id="contenedor_items_6" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/8E344800-43C7-4DAC-8B56-6C49C460D491.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">Mejores restaurantes de comida Internacional a tu alrededor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                            <div id="contenedor_items_7" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/545CE4A3-16B1-4622-9204-2C29DF2E7EED.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">mejores restaurantes de comida Tapas / Botanas a tu alrededor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                            <div id="contenedor_items_8" class="contenedor__items1">
+                                <div class="contenedor__imagen1"  style="background-image:url(//cdn.otstatic.com/start-page-rush-654/5050D255-C8C4-40BD-BF56-5C35108FE9C1.jpg)"><a href="#" class="contenedor___datos__enlace">
+                                    <span class="contenedor__contenido1">Mejores restaurantes de comida Americana a tu alrededor</span>
+                                    <div class="contenedor__cover"></div>
+                                </a></div>
+                            </div>
+                        </div>
+                        <a class="prev2" id="-1" value="-1">&#10094;</a>
+                        <a class="next2" id="1" value="1" >&#10095;</a>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+
+</body>
+<script type="text/javascript" src="header.js"></script>
+
+</html>
